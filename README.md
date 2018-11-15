@@ -1,4 +1,4 @@
-# Initialize Environment for RAILS delvelopment
+# Initialize Environment for RAILS delvelopment for Ubuntu 18
 
 Install using:
 ```
@@ -13,4 +13,9 @@ Will install
 * rails gem
 * nodejs 10
 * yarn
+
+After running this script, create a postgres user
+```
+sudo su postgres -c "createuser -s your_ubuntu_user_name"
+```
 
