@@ -2,7 +2,7 @@
 
 Install using:
 ```
-curl -sL https://raw.githubusercontent.com/rmukhia/init-rails/master/install-development.sh | sudo -E bash -
+curl -sL https://raw.githubusercontent.com/rmukhia/init-rails/master/install-development.sh | bash -
 ```
 
 Will install
