@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install -y gcc g++ make
+sudo apt-get install -y gcc g++ make git
 sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev postgresql postgresql-server-dev-10
 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
@@ -15,7 +15,8 @@ cd ~/.rbenv && src/configure && make -C src
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
-source ~/.bashrc
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
