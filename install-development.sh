@@ -21,9 +21,9 @@ eval "$(rbenv init -)"
 mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
-rbenv install 2.5.1
+rbenv install 2.6.1
 
-rbenv global 2.5.1
+rbenv global 2.6.1
 
 gem install bundler
 gem install rails
